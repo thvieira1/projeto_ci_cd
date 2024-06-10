@@ -1,0 +1,9 @@
+pandas
+seaborn
+matplotlib
+numpy
+scikit-learn
+tensorflow
+azureml-core
+azureml-sdk
+joblib
