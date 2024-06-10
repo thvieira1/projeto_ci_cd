@@ -1,7 +1,11 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
 trigger:
-- main
+  branches:
+    include:
+      - main  # substitua 'main' pelo nome do seu branch principal, se necessário
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: echo 'Hello, World!'
+  displayName: 'Print Hello World'
