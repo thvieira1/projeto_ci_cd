@@ -1,12 +1,17 @@
 trigger:
   branches:
     include:
+<<<<<<< HEAD
       - main
+=======
+      - main  # substitua 'main' pelo nome do seu branch principal, se necessário
+>>>>>>> 980e11e4b0503ee55b77b0a37b3163c40b2551cd
 
 pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+<<<<<<< HEAD
 - task: UsePythonVersion@0
   inputs:
     versionSpec: '3.x'
@@ -29,3 +34,7 @@ steps:
   inputs:
     PathtoPublish: 'models'
     ArtifactName: 'model'
+=======
+- script: echo 'Hello, World!'
+  displayName: 'Print Hello World'
+>>>>>>> 980e11e4b0503ee55b77b0a37b3163c40b2551cd
